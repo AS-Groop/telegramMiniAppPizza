@@ -23,5 +23,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/tailwindcss', '@vesp/nuxt-fontawesome']
+  devServer: {
+    host: "192.168.9.159"
+  },
+  modules: ['@nuxtjs/tailwindcss', '@vesp/nuxt-fontawesome', '@pinia/nuxt']
 })

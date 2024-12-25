@@ -5,3 +5,9 @@
     <NuxtWelcome />
   </div>
 </template>
+<script lang="ts" setup>
+
+import {useTgWebAppStore} from "~/stores/tgWebApp";
+
+useTgWebAppStore().init()
+</script>
