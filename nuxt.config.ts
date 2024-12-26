@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   ssr: false,
   app: {
     head: {
@@ -22,9 +22,6 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     },
-  },
-  devServer: {
-    host: "192.168.9.159"
   },
   modules: ['@nuxtjs/tailwindcss', '@vesp/nuxt-fontawesome', '@pinia/nuxt']
 })

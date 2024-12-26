@@ -1,13 +1,8 @@
-<template>
-  <div>
-    <div class="bg-cyan-400">dsaf</div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
-</template>
-<script lang="ts" setup>
+<script setup>
 
-import {useTgWebAppStore} from "~/stores/tgWebApp";
+await useTgWebAppStore().init()
 
-useTgWebAppStore().init()
 </script>
+<template>
+    <NuxtPage/>
+</template>
